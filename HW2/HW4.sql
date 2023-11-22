@@ -16,3 +16,9 @@ INNER JOIN products t3
 ON t2.productcode = t3.productcode
 INNER JOIN customers t4
 ON t1.customernumber = t4.customernumber;
+
+
+CREATE TABLE new_order AS SELECT * FROM orders;
+
+USE birdstrikes;
+CREATE TABLE oklahoma_records AS SELECT * FROM birdstrikes WHERE state = 'oklahoma';
